@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <link rel="stylesheet" type="text/css" href="assets/style.css">
+    <style>
+        img {
+            width: 50%;
+            /*width half the size of the box | height will be auto size so aspect ratio will be the same|*/
+            float: right;
+        }
+
+        .title {
+            font-family: Arial, Helvetica, sans-serif;
+            /*1>2>3 if 3 font not found inherit parent*/
+            font-size: 1.2em;
+            color: black;
+        }
+
+        .description {
+            font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+            /*1>2>3 if 3 font not found inherit parent*/
+            font-size: 1.2em;
+            color: black;
+            text-align: justify;
+        }
+
+        .price {
+            font-family: "Courier New", Courier, monospace;
+            /*1>2>3 if 3 font not found inherit parent*/
+            font-size: 1em;
+            color: red;
+        }
+
+        .box {
+            margin: 1px auto;
+            border: 1px black solid;
+            background-color: lightgray;
+            width: 30%;
+            text-align: center;
+        }
+
+        .flex-box {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            align-items: stretch;
+        }
+
+        html {
+            overflow: auto;
+            clear: right;
+        }
+
+        .text {
+            display: inline-block;
+            width: 48%;
+            /*height: auto;*/
+            margin: 1%;
+            vertical-align: middle;
+        }
+    </style>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="author" content="SSE" />
+    <meta name="description" content="Whatever you want we have!" />
+    <link rel="icon" href="assets/favicon.png" type="image/x-icon" />
+    <title>Shop 4 Products</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="" />
+</head>
+
+<body>
+    <div class="flex-box">
+        <div class="box">
+            <img src="assets/rook_armor.png" />
+            <div class="text">
+                <div class="title">
+                    <b><u>Rook Armor</u></b>
+                </div>
+                <div class="description">
+                    &quot;I trust that the ceramic trauma plate I’m wearing, will stop a
+                    357 magnum round travelling at 490 meters per second. I trust myself
+                    not to move, not to flinch. I trust my teammates. And they, trust
+                    me.&quot;-Rook
+                </div>
+                <div class="price">
+                    Price: $100
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <img src="assets/regular_expressions.png" />
+            <div class="text">
+                <div class="title">
+                    <b><u>Regex Course</u></b>
+                </div>
+                <div class="description">
+                    &quot;Speaking RegEx isn't too hard. Memorize .* and bam, you know
+                    everything.&quot;- Smart lad
+                </div>
+                <div class="price">
+                    Price: $0
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <img src="assets/xvxu4s9ow5u21.jpg" />
+            <div class="text">
+                <div class="title">
+                    <b><u>Programming course</u></b>
+                </div>
+                <div class="description">
+                    How2bMaster?<br />
+                    Marked as off topic <br />
+                    Marked as duplicate.<br />
+                    Edit: Nvm, I found the answer.
+                </div>
+                <div class="price">
+                    Price: $-1
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
