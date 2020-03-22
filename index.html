@@ -7,30 +7,39 @@
     <title>Products</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
+        .flex-box {
+            display: flex;
+            /*this will by default layout the child elements in rows*/
+            flex-wrap: wrap;
+            /*When there is not sufficient space in a row, flow over to next row*/
+            justify-content: flex-start;
 
-        .flex-box{
-            display:flex; <!--this will by default layout the child elements in rows-->
-            flex-wrap: wrap; <!--When there is not sufficient space in a row, flow over to next row-->
-            justify-content:flex-start;
         }
 
         .image {
-            width: 50%;
+            width: 90%;
+        }
+
+        .invisible-box {
+            display: flex;
+            align-items: center;
+            align-items: center;
         }
 
         .box1 {
             margin: 1px auto;
             border: 1px black solid;
             background-color: lightgreen;
-            width: 30%;
+            width: 40%;
             text-align: center;
+            flex-flow: column;
         }
 
         .box2 {
             margin: 1px auto;
             border: 1px black solid;
             background-color: lightpink;
-            width: 30%;
+            width: 40%;
             text-align: center;
         }
 
@@ -38,7 +47,7 @@
             margin: 1px auto;
             border: 1px black solid;
             background-color: mistyrose;
-            width: 30%;
+            width: 40%;
             text-align: center;
         }
 
@@ -67,47 +76,72 @@
     </h1>
     <div class="flex-box">
         <div class="box1">
-            <h2>Brain of high IQ</h2>
-            <div class="description">This product is taken from Albert Einstein in the early 1900s, and with this it
-                will guarantee you an A1 grade for all subjects! Buy it whlie stocks lasts!</div>
-            <p>Stocks left: 0. Come back soon!</p>
-            <div class="price">Price: $13</div>
-            <div class="imageDescription">Here is a photo of his brain:</div>
-            <p><img src="https://physicsworld.com/wp-content/uploads/2020/01/brain-web-511446631-Shutterstock_Phonlamai-Photo.jpg"
-                    class="image"></p>
+            <div class="invisible-box">
+                <div>
+                    <h2>Brain of high IQ</h2>
+                    <div class="description">This product is taken from Albert Einstein in the early 1900s, and with
+                        this it
+                        will guarantee you an A1 grade for all subjects! Buy it whlie stocks lasts!</div>
+                    <p>Stocks left: 0. Come back soon!</p>
+                    <div class="price">Price: $13</div>
+                </div>
+                <div>
+                    <div class="imageDescription">Here is a photo of his brain:</div>
+                    <p><img src="https://physicsworld.com/wp-content/uploads/2020/01/brain-web-511446631-Shutterstock_Phonlamai-Photo.jpg"
+                            class="image"></p>
+                </div>
+            </div>
         </div>
-
         <div class="box2">
-            <h2>Brain of high EQ</h2>
-            <div class="description">This product is taken from the 1800s, and is well-examined and analysed how
-                people back in the 1800s are like. You may think this EQ brain is not up-to-date; but fear not, for the
-                behaviour of humans in the past century have been updated frequently! If you feel you are autistic,
-                feel free to click the buy button!</div>
-            <p>Stocks left: 0. Come back soon!</p>
-            <div class="price">Price: $19</div>
-            <div class="imageDescription">Here is a photo of the brain:</div>
-            <p><img src="https://www.sciencemag.org/sites/default/files/styles/article_main_large/public/ep_AWNKAW-copy_16x9.jpg?itok=bB40rEGn"
-                    class="image"></p>
+            <div class="invisible-box">
+                <div>
+                    <h2>Brain of high EQ</h2>
+                    <div class="description">This product is taken from the 1800s, and is well-examined and analysed how
+                        people back in the 1800s are like. You may think this EQ brain is not up-to-date; but fear not,
+                        for
+                        the
+                        behaviour of humans in the past century have been updated frequently! If you feel you are
+                        autistic,
+                        feel free to click the buy button!</div>
+                    <p>Stocks left: 0. Come back soon!</p>
+                    <div class="price">Price: $19</div>
+                </div>
+                <div>
+                    <div class="imageDescription">Here is a photo of the brain:</div>
+                    <p><img src="https://www.sciencemag.org/sites/default/files/styles/article_main_large/public/ep_AWNKAW-copy_16x9.jpg?itok=bB40rEGn"
+                            class="image"></p>
+                </div>
+            </div>
         </div>
 
         <div class="box3">
-            <h2>Grace's brain of Idiocy</h2>
-            <div class="description">This is Grace's brain. Buy it to experience how weird Grace is and also to
-                experience
-                life from the perspective of the dumbest person ever! Only one person can get this unique
-                once-in-a-lifetime
-                experience!</div>
-            <div class="price">Price: $0 **
-                <p>**<b>Terms and conditions apply:</b> You have to kill Grace first. Grace will gladly die for you as
-                    long
-                    as the death is smooth and painless :)</p>
+            <div class="invisible-box">
+                <div>
+                    <h2>Grace's brain of Idiocy</h2>
+                    <div class="description">This is Grace's brain. Buy it to experience how weird Grace is and also to
+                        experience
+                        life from the perspective of the dumbest person ever! Only one person can get this unique
+                        once-in-a-lifetime
+                        experience!</div>
+                    <div class="price">Price: $0 **
+                        <p>**<b>Terms and conditions apply:</b> You have to kill Grace first. Grace will gladly die for
+                            you
+                            as
+                            long
+                            as the death is smooth and painless :)</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="imageDescription">Here is a photo of the brain: (<i>As Grace is not yet dead, we could
+                            only
+                            get
+                            an
+                            X-Ray image scan of her
+                            tiny brain.</i>)</div>
+                    <p><img src="https://c8.alamy.com/comp/H7NDD5/x-ray-of-the-human-skoll-with-very-small-brain-H7NDD5.jpg"
+                            class="image"></p>
+                </div>
             </div>
-            <div class="imageDescription">Here is a photo of the brain: (<i>As Grace is not yet dead, we could only get
-                    an
-                    X-Ray image scan of her
-                    tiny brain.</i>)</div>
-            <p><img src="https://c8.alamy.com/comp/H7NDD5/x-ray-of-the-human-skoll-with-very-small-brain-H7NDD5.jpg"
-                    class="image"></p>
         </div>
     </div>
     <script src="" async defer></script>
